@@ -46,6 +46,7 @@ Page({
   onShareAppMessage() {
     return {
       title: `青团小翻译官-即时免费的中英文双语翻译～`,
+      imageUrl: 'https://ojlf2aayk.qnssl.com/qts-translater.jpg',
       path: '/pages/index/index'
     }
   },
