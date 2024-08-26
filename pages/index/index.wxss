@@ -148,7 +148,8 @@
     right: 0;
     bottom: 400rpx;
     background: #FFFFFF;
-    color: #B2B2B2;
+    color: #171717;
     border-radius: 24rpx 0 0 24rpx;
     z-index: 9999;
+    border: 2rpx solid #DDDDDD;
 }
