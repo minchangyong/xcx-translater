@@ -136,3 +136,19 @@
   z-index: 40;
   width: 100%;
 }
+
+.kf-btn {
+    width: 120rpx;
+    height: 48rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-size: 24rpx;
+    right: 0;
+    bottom: 400rpx;
+    background: #FFFFFF;
+    color: #B2B2B2;
+    border-radius: 24rpx 0 0 24rpx;
+    z-index: 9999;
+}

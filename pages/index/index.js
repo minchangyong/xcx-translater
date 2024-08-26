@@ -10,20 +10,7 @@ import {
 const manager = plugin.getRecordRecognitionManager()
 Page({
   data: {
-    dialogList: [
-      // {
-      //   // 当前语音输入内容
-      //   create: '06/29 09:54',
-      //   lfrom: 'zh_CN',
-      //   lto: 'en_US',
-      //   text: '这是测试这是测试这是测试这是测试',
-      //   translateText: 'this is test.this is test.this is test.this is test.',
-      //   voicePath: '',
-      //   translateVoicePath: '',
-      //   autoPlay: false, // 自动播放背景音乐
-      //   id: 0,
-      // },
-    ],
+    dialogList: [],
     scroll_top: 10000, // 竖向滚动条位置
     bottomButtonDisabled: false, // 底部按钮disabled
     tips_language: language[0], // 目前只有中文
@@ -378,6 +365,12 @@ Page({
       toView: this.data.toView
     })
     app.getRecordAuth()
+  },
+  handleService() {
+    wx.navigateToMiniProgram({
+        appId: 'wxf75cfcbb5412db15',
+        path: `/pkgGame/pages/game_role_select/index?redirectUrl=/pkgGame/pages/game_engine_tool/index&product_code=A1109&version=v2&engineId=cf_fhwt`
+    })
   },
   onHide() {
     this.setHistory()
